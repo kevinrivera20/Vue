@@ -1,0 +1,52 @@
+¿Qué es Vue.js?
+    - Es uno de los frameworks para desarrollo frontend más importante de la actualidad, junto con angulat y react.js, y te permitira realizar cualquier tipo de aplicaciones a un nivel profesional, fue creado por Evan You, Vue le pertenece 100% a la comunidad y se trabaja con componentes.
+
+Partes de un componente.
+    - Vista, es la parte del componente con la que el usuario interactúa.
+    - Estado, es el estado interno de el componente, ejemplo podríamo habilitar y deshabilitar un botón.
+    - Interfaz, es la forma en el que el resto de el sistema interactúa con el componente
+
+El patrón MVVM.
+    - Ayuda a separar un poco cómo definimos la interfaz de usuario y cómo programamos la lógica de negocios.
+
+Interpolación de datos.
+    - Las interpolaciones y directivas en VueJs 2 son la manera de trabajar con las variables de nuestros componentes reactivos.
+
+
+Propiedades Computadas.
+    - Es una función que se ejecuta al inicio de el renderizado de la app y que almacena su valor "calculado" y este es el que se usa, pero además se calcula de nuevo cuando cambian las "variables" definidas en data a las que se hace referencia.
+
+Diferencia entre los métodos y las computadas.
+    - Una de las diferencias entre una computada y un método es que la computada no necesita ser llamada para que escuche los cambios. El método puede retornar el valor deseado, pero siempre hay que hacer un llamado al mismo cuando queramos tenerlos en la vista. 
+
+
+Estilos Reactivos.
+    - Las más utilizadas por la librería o framework vue son Style y class.
+
+
+Condicionales.
+    - Las condicionales en Vue, cómo en otros frameworks de frontend, nos permitiran hacer una vista dínamica. Mediante atributos, podremos añadirles a los elementos html condiciones que harán que se muestre un valor u otro, un elemento u otro elemento. 
+
+Componentes. 
+    - Los componentes son una de las características fundamentales de Vue. Ayudan a extender las características básicas  de las etiquetas HTML y encapsular código. Un componente es generalmente una nueva etiqueta con una interfaz y comportamiento particular, un componente es un bloque de código que cumple una función única en una página o aplicación.
+
+Slots. 
+    - Un slot es como un fragmento de componente al cuál se le puede inyectar contenido. Esto permite que podamos utilizar los componentes de vue de la misma forma cómo funciona un elemento en bloque en HTML permitiéndole anidar otros elementos dentro de él. 
+
+Comunicación entre componentes padre a hijo.
+    - Básicamente y cómo el mismo lo dice es comunicar un componente padre a uno hijo o viceversa.
+
+V-model. 
+    - Es una directiva que proporciona enlace de datos bidireccional entre una entrada y datos de formulario o entre dos componentes. Es un concepto simple en el desarrollo de Vue, pero los verdaderos poderes de v-model toman algún tiempo para comprender. 
+
+Comunicación con componentes profundos.
+    - Es cuando un componente no es directamente hijo de un elemento padre, son cómo los hijos componentes de los otros hijos.
+
+Provide.
+    - Vue nos proporciona de manera nativa la inyección de dependencias en componentes, llamada Provide/Inject . Un componente puede proveer de algo (un valor, un objeto o una función).
+
+Instancias de componentes.
+    - crear una instancia de Vue, que cualquier componente empiece con .vue o similar.
+
+Vue progresivo.
+    - Es un framework progresivo esto quiere decir que las funcionalidades principales (el renderizado y el sistema de componentes) están en una pequeña biblioteca, sin embargo es posible añadir todas las funcionalidades que tienen otros frameworks completos como el routing en el lado del cliente , build systems como webpack. 

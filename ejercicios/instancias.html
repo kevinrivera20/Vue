@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instancias</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <div id="app"></div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    text: "Hola Vue"
+                };
+            },
+            template: //html
+            `
+                <v-button ref="elemento" :label="text"></v-button>
+            `
+        });
+        app.component("v-button", {
+            props: ["label"],
+            template: //html
+            `
+                <button>{{ label }}</button>
+            ` 
+        })
+
+        const vm = app.mount("#app");
+        console.log(vm.$refs.elemento);
+    </script>
+</body>
+</html>
